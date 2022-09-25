@@ -48,7 +48,8 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: "Roboto", sans-serif;
   font-size: 19px;
   line-height: 1.5;
 }
@@ -266,17 +267,11 @@ body {
   overflow-x: hidden;
 }
 
-/* html {
- *   font-family: "PT Serif", Georgia, "Times New Roman", serif;
- * }
- */
-
 html {
+  /* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
-  line-height: 1.5;
 }
-
+ 
 h1,
 h2,
 h3,
