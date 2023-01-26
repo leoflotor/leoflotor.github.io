@@ -13,7 +13,7 @@
     </title>
     <link> https://leoflotor.github.io/ </link>
     <description>
-      <![CDATA[  My journey on quantum mechanics, linear algebra, artificial intelligence and algorithms.  ]]>
+      <![CDATA[  My journey on quantum mechanics, linear algebra, artificial intelligence, algorithms and programming languages.  ]]>
     </description>
     <atom:link
       href="https://leoflotor.github.io/feed.xml"
@@ -35,7 +35,7 @@
   
   
   <atom:author>
-    <atom:name>Leonardo Flores Torres</atom:name>
+    <atom:name>Leonardo Flores-Torres</atom:name>
   </atom:author>
         
 </item>
@@ -54,7 +54,7 @@
   
   
   <atom:author>
-    <atom:name>Leonardo Flores Torres</atom:name>
+    <atom:name>Leonardo Flores-Torres</atom:name>
   </atom:author>
         
 </item>
