@@ -5,11 +5,13 @@
 :root {
   --block-background: hsl(0, 0%, 94%);
   --output-background: hsl(0, 0%, 98%);
-  --bg-color: rgba(249, 245, 215, 0.55);
-  --sidebar-color: rgba(249, 245, 215, 0.95);
-  --button-color: rgba(247, 217, 185, 0.95);
+  --bg-color: rgba(251, 241, 199, 0.75);
+  --sidebar-color: rgba(238, 224, 183, 0.85);
+  --button-color: rgba(111, 131, 82, 0.55);
+  --line-color: rgba(124, 111, 100, 1.0);
   --normal: 17px;
   --small: 13px;
+  --x-small: 10px;
   --text-color: hsv(0, 0%, 20%);
 }
 
@@ -204,14 +206,14 @@ h6 {
 
 .franklin-content h1 {
   padding-bottom: 0.5em;
-  border-bottom: 3px double lightgrey;
+  border-bottom: 5px double var(--line-color);
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
 .franklin-content h2 {
   padding-bottom: 0.3em;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid var(--line-color);
   margin-top: 2em;
   margin-bottom: 1em;
 }

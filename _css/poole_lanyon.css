@@ -333,7 +333,7 @@ h6 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 3px solid var(--line-color);
 }
 
 .masthead-title {
@@ -347,9 +347,9 @@ h6 {
 }
 
 .masthead-title small {
-  font-size: 75%;
+  font-size: 70%;
   font-weight: 400;
-  color: #c0c0c0;
+  color: var(--line-color);
   letter-spacing: 0;
 }
 
@@ -419,13 +419,13 @@ h6 {
 
 /* Sidebar nav */
 .sidebar-nav {
-  border-bottom: 3px solid var(--button-color);
+  border-bottom: 1px solid var(--line-color);
 }
 
 .sidebar-nav-item {
   display: block;
   padding: 0.5rem 1rem;
-  border-top: 3px solid var(--button-color);
+  border-top: 1px solid var(--line-color);
 }
 
 .sidebar-nav-item.active,
@@ -461,7 +461,7 @@ a.sidebar-nav-item:focus {
   width: 2.2rem;
   padding: 0.5rem 0.65rem;
   color: #505050;
-  background-color: var(--button-color);
+  background-color: var(--bg-color);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -482,8 +482,8 @@ a.sidebar-nav-item:focus {
 
 .sidebar-toggle:active,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: #fff;
-  background-color: #505050;
+  color: #505050;
+  background-color: var(--button-color);
 }
 
 @media (min-width: 30.1rem) {

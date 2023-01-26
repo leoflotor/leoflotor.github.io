@@ -4,7 +4,7 @@ Directories must end with a "/".
 -->
 +++
 
-author = "Leonardo Flores-Torres"
+author = "Flores-Torres Leonardo"
 mintoclevel = 2
 
 ignore = ["node_modules/"]
