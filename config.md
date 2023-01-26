@@ -4,14 +4,14 @@ Directories must end with a "/".
 -->
 +++
 
-author = "Leonardo Flores Torres"
+author = "Leonardo Flores-Torres"
 mintoclevel = 2
 
 ignore = ["node_modules/"]
 
 generate_rss = true
 website_title = "QuantumBeans"
-website_descr = "My journey on quantum mechanics, linear algebra, artificial intelligence and algorithms."
+website_descr = "My journey on quantum mechanics, linear algebra, artificial intelligence, algorithms and programming languages."
 website_url   = "https://leoflotor.github.io/"
 
 +++

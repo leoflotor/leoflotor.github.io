@@ -6,19 +6,83 @@
   --block-background: hsl(0, 0%, 94%);
   --output-background: hsl(0, 0%, 98%);
   --small: 14px;
-  --normal: 19px;
+  --normal: 17px;
   --text-color: hsv(0, 0%, 20%);
+}
+
+
+/* ==================================================================
+    FONT FACES
+================================================================== */
+
+@font-face {
+  font-family: "Trocchi";
+  src: url(/assets/fonts/Trocchi-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url(/assets/fonts/Nunito-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url(/assets/fonts/Nunito-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url(/assets/fonts/IBMPlexMono-Regular.ttf) format('truetype');
+  font-weight: normal;
 }
 
 /* ==================================================================
     DEFAULT FONT AND LAYOUT
 ================================================================== */
 
-html {
+html, body {
   /* font-family: Helvetica, Arial, sans-serif; */
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito";
   font-size: var(--normal);
   color: var(--text-color);
+}
+
+/* Body text
+p {
+  font-family: "Nunito";
+}
+
+a {
+  font-family: "Nunito";
+}
+*/
+
+.masthead {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+}
+
+.masthead-title a {
+  font-family: "Trocchi";
+  color: #505050;
+}
+
+.masthead-title small {
+  font-size: 75%;
+  font-weight: 400;
+  font-family: "Trocchi";
+  color: #c0c0c0;
+  letter-spacing: 0;
 }
 
 /* ==================================================================
@@ -62,13 +126,18 @@ html {
 
 .page-foot {
   font-size: 80%;
-  font-family: Arial, serif;
+  /* font-family: Arial, serif; */
+  font-family: "Nunito";
   color: #a6a2a0;
   text-align: center;
   margin-top: 6em;
   border-top: 1px solid lightgrey;
   padding-top: 2em;
   margin-bottom: 4em;
+}
+
+.page-heading {
+  font-size: 20%;
 }
 
 /* ==================================================================
@@ -108,9 +177,21 @@ html {
     TITLES
 ================================================================== */
 
-.franklin-content h1 { font-size: 24px; }
-.franklin-content h2 { font-size: 22px; }
-.franklin-content h3 { font-size: 20px; }
+.franklin-content h1 { 
+  font-family: "Trocchi";
+  font-weight: bold;
+  font-size: 24px; 
+}
+.franklin-content h2 { 
+  font-family: "Trocchi";
+  font-weight: bold;
+  font-size: 22px; 
+}
+.franklin-content h3 { 
+  font-family: "Trocchi";
+  font-weight: bold;
+  font-size: 20px;
+}
 
 .franklin-content h1,
 h2,
@@ -286,22 +367,25 @@ body { counter-reset: eqnum; }
     CODE & HIGHLIGHT.JS
 ================================================================== */
 
+/*
 code {
   background-color: var(--block-background);
   padding: 0.1em 0.2em;
   border-radius: 2px;
+  font-family: "IBM";
   font-size: var(--small);
 }
+*/
 
-/* .franklin-content code { */
 
-/* background-color: rgba(27,31,35,0.05); */
+.franklin-content code {
+  background-color: rgba(27,31,35,0.05);
+  padding: 0.15em 0.35em;
+  border-radius: 10px;
+  font-family: "IBM Plex Mono";
+  font-size: var(-small);
+}
 
-/* padding: 0.1em 0.2em; */
-
-/* border-radius: 2px; */
-
-/* font-size: 90%; } */
 
 .hljs {
   font-size: var(--small);
@@ -314,9 +398,10 @@ code {
 .hljs-meta.shell_ {color: crimson;}
 .hljs-meta.prompt_ {color: rgb(25, 179, 51);}
 
-.code-output {
+.franklin-content .code-output {
   background: var(--output-background);
   border: 1px dashed #dbdbdb;
+  border-radius: 10px;
 }
 
 /* ==================================================================
