@@ -56,7 +56,8 @@ html {
 
 body {
   color: #515151;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: var(--bg-color);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -389,8 +390,9 @@ h6 {
   overflow-y: auto;
   font-family: "Nunito", sans-serif;
   font-size: 0.875rem; /* 15px */
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #202020;
+  color: rgba(0, 0, 0, 0.6);
+  /* background-color: #202020; */
+  background-color: var(--sidebar-color);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -404,7 +406,7 @@ h6 {
 /* Sidebar content */
 .sidebar a {
   font-weight: normal;
-  color: #fff;
+  color: #000000;
 }
 
 .sidebar-item {
@@ -417,20 +419,20 @@ h6 {
 
 /* Sidebar nav */
 .sidebar-nav {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 3px solid var(--button-color);
 }
 
 .sidebar-nav-item {
   display: block;
   padding: 0.5rem 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 3px solid var(--button-color);
 }
 
 .sidebar-nav-item.active,
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--button-color);
   border-color: transparent;
 }
 
@@ -459,7 +461,7 @@ a.sidebar-nav-item:focus {
   width: 2.2rem;
   padding: 0.5rem 0.65rem;
   color: #505050;
-  background-color: #fff;
+  background-color: var(--button-color);
   border-radius: 4px;
   cursor: pointer;
 }

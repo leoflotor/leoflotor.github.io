@@ -5,8 +5,11 @@
 :root {
   --block-background: hsl(0, 0%, 94%);
   --output-background: hsl(0, 0%, 98%);
-  --small: 14px;
+  --bg-color: rgba(249, 245, 215, 0.55);
+  --sidebar-color: rgba(249, 245, 215, 0.95);
+  --button-color: rgba(247, 217, 185, 0.95);
   --normal: 17px;
+  --small: 13px;
   --text-color: hsv(0, 0%, 20%);
 }
 
@@ -43,22 +46,19 @@
     DEFAULT FONT AND LAYOUT
 ================================================================== */
 
-html, body {
+html {
   /* font-family: Helvetica, Arial, sans-serif; */
   font-family: "Nunito";
   font-size: var(--normal);
   color: var(--text-color);
 }
 
-/* Body text
-p {
-  font-family: "Nunito";
-}
 
-a {
+body {
   font-family: "Nunito";
+  font-size: var(--normal);
+  color: var(--text-color);
 }
-*/
 
 .masthead {
   padding-top: 1rem;
@@ -383,7 +383,7 @@ code {
   padding: 0.15em 0.35em;
   border-radius: 10px;
   font-family: "IBM Plex Mono";
-  font-size: var(-small);
+  font-size: var(--small);
 }
 
 
