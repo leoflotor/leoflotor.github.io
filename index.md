@@ -2,7 +2,6 @@
 title = "Home"
 hascode = false
 hasmath = false
-tags = []
 +++
 
 # About

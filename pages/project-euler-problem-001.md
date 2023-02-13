@@ -6,7 +6,7 @@ hascode = true
 lang = "plaintext"
 +++
 
-# Project Euler Problem 001
+# Project Euler problem 001
 
 The statement to the first problem is as follows:
 
