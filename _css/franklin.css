@@ -133,7 +133,7 @@ body {
 }
 
 .page-foot {
-  font-size: 80%;
+  font-size: 820;
   /* font-family: Arial, serif; */
   font-family: "Nunito";
   color: #a6a2a0;
@@ -423,14 +423,14 @@ code {
 
 .franklin-content .colbox-blue {
   background-color: #eef3f5;
-  padding-top: 5px;
+  padding-top: 20px;
   padding-right: 10px;
   padding-left: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
   margin-left: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 7px 10px 10px 7px;
   border-left: 5px solid #4c9cf1;
 }
 
