@@ -55,21 +55,21 @@ On each recursion, the value of `start` is modified adding 1 to it as to *emulat
 
 By this point I noticed something seemed weird in the structure of `sum-of-multiples`, the logic was a little bit messy. Even though the result of evaluating the function with the test case gave the correct result:
 
-```
+```scheme
 > (sum-of-multiples 0 10)
 23
 ```
 
 Let us compute the solution to the problem before refactoring the functions:
 
-```
+```scheme
 > (sum-of-multiples 1 1000)
 233168
 ```
 
 The first change is to remove the explicit dependency of `sum-of-multiples` changing `start` to be an optional argument, and declaring it to start at 1 instead of 0:
 
-```
+```scheme
 (define (sum-of-multiples stop [start 0] [acc 0])
   (if (= start stop)
       acc
@@ -86,7 +86,7 @@ $$
 $$
 okay so I was right but I can make it neater. And `sum-of-multiples` will look like
 
-```
+```scheme
 (define (sum-of-multiples stop [start 0] [acc 0])
   (if (= start stop)
       acc
@@ -97,7 +97,7 @@ okay so I was right but I can make it neater. And `sum-of-multiples` will look l
 
 I still don't like to have two functions that do se same thing `multiple-of-3?` and `multiple-of-5?`. One single function could do the trick:
 
-```
+```scheme
 (define (is-multiple? x y)
   (=
    (modulo x y)
@@ -106,7 +106,7 @@ I still don't like to have two functions that do se same thing `multiple-of-3?` 
 
 With this change, the function `sum-of-multiples` will look as
 
-```
+```scheme
 (define (sum-of-multiples stop [start 0] [acc 0])
   (if (= start stop)
       acc
@@ -119,7 +119,7 @@ With this change, the function `sum-of-multiples` will look as
 
 Testing it with the test case and the problem case we get the same results:
 
-```
+```scheme
 > (sum-of-multiples 10)
 23
 > (sum-of-multiples 1000)
@@ -128,7 +128,7 @@ Testing it with the test case and the problem case we get the same results:
 
 In `racket` there is a function very handy to remove the two calls of `is-multiple?` inside the `or`, it is `ormap`. For example, the function `is-multiple?` can be mapped to the elements of a list, in this case 3 and 5, to know if a given number is multiple of each of them individually:
 
-```
+```scheme
 > (map (lambda (x)
 	(is-multiple? 6 x)) '(3 5))
 '(#t #f)
@@ -136,7 +136,7 @@ In `racket` there is a function very handy to remove the two calls of `is-multip
 
 Clearly, 6 is multiple of 3 but not of 5. But it is only necessary that the number we are testing, in this case is 6, is multiple of one of them not all. This is were `ormap` is helpful, the documentation explains that `(ormap f (list x y z))` is equivalent to `(or (f x) (f y) (f z))` where `f` is a function and `x, y, z` are arguments to be applied to that function. Thus, the refactoring will lead to:
 
-```
+```scheme
 (define (sum-of-multiples stop [start 0] [acc 0])
   (if (= start stop)
       acc
@@ -148,7 +148,7 @@ Clearly, 6 is multiple of 3 but not of 5. But it is only necessary that the numb
 
 And the function can be made more generic is a new argument is provided to hold the list of factors:
 
-```
+```scheme
 (define (sum-of-multiples factors stop [start 0] [acc 0])
   (if (= start stop)
       acc
