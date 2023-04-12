@@ -24,7 +24,7 @@ I'll start by breaking the problem into parts. The first part being to determine
 
 I wrote one function for each case:
 
-```
+```scheme
 (define (multiple-of-3? n)
   (= 
     (modulo n 3)
@@ -40,7 +40,7 @@ Now, with a way to determine if a given number $n$ is multiple of 3 or 5, it is 
 
 The function `sum-of-multiples` has 3 arguments, the starting and ending points of the sum, `start` and `stop`, respectively, and an optional argument `acc` which is an accumulator where the sum of those numbers that are multiples of 3 and 5 are added up:
 
-```
+```scheme
 (define (sum-of-multiples start stop [acc 0])
   (if (= start stop)
       acc
