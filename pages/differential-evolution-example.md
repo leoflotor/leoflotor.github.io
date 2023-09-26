@@ -46,12 +46,36 @@ $$
 
 \begin{figure}{**Figure 2.** Plot of function $G$.}\fig{/assets/differential-evolution-example/plot-function-g.png}\end{figure}
 
-
-
 ## Hands-on
 
-Okay, so lets get started. 
+Before anything else, the following libraries are the ones used for this project.
 
+```scheme
+#lang racket/base
 
+(require racket/list)
+(require racket/random)
+(require racket/math)
+(require plot)
+
+;; Evaluations counter
+(define *evals-count* 0)
+
+;; Default number of guests to create mutant list
+(define *guests-count* 3)
+```
+
+Don't give much importance now to `*evals-count*` and `*guests-count*`, both are used as global variables, but the important one is `*evals-count
+*` because that variable will help us to keep track of how many *evaluations* have been made. Each time one solution is created or a currently existing solution is modified, the evaluation count increases by 1 until a maximum has been reached, it is associated with the action of computing a score to a solution.
+
+Okay, so lets get started. First we need one way of storing the solutions, one way would be to use association lists or hash tables, these two data structures are readily available in Racket and would allow us to keep the solution itself and a score that will let us know how *good* the solution is. An alternative is to use structs,
+
+```scheme
+;; Struct to store the relevant information of a solution
+(struct solution
+ (slist sscore)
+  #:mutable #:transparent)
+```
+where the solution is stored in `slist`, and its score in `sscore`. 
 
 ~
