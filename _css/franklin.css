@@ -364,7 +364,7 @@ body { counter-reset: eqnum; }
   content: "(" counter(eqnum) ")";
   position: relative;
   float: right;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 .nonumber .katex-display::after {

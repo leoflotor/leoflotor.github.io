@@ -1,7 +1,7 @@
 +++
 title = "PE problem 1"
 date = Date(2023, 2, 11)
-tags = ["coding", "euler", "racket"]
+tags = ["coding", "project-euler", "racket", "a-lisp"]
 hascode = true
 lang = "plaintext"
 +++
