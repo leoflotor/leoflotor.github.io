@@ -1,5 +1,5 @@
 +++
-title = "PE problem 1"
+title = "PE problem 9"
 date = Date(2025, 05, 15)
 tags = ["coding", "project-euler", "sbcl", "a-lisp"]
 hascode = true
