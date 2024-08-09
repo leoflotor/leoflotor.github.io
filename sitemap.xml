@@ -3,61 +3,61 @@
 
 <url>
     <loc>https://leoflotor.github.io/menu-entries/index.html</loc>
-    <lastmod>2024-04-15</lastmod>
+    <lastmod>2024-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://leoflotor.github.io/menu2/index.html</loc>
-    <lastmod>2024-04-15</lastmod>
+    <lastmod>2024-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://leoflotor.github.io/index-old/index.html</loc>
-    <lastmod>2024-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://leoflotor.github.io/pages/project-euler-problem-002/index.html</loc>
-    <lastmod>2024-04-15</lastmod>
+    <loc>https://leoflotor.github.io/pages/pe-001/index.html</loc>
+    <lastmod>2024-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://leoflotor.github.io/pages/differential-evolution-example/index.html</loc>
-    <lastmod>2024-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://leoflotor.github.io/pages/project-euler-problem-009/index.html</loc>
-    <lastmod>2024-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://leoflotor.github.io/pages/project-euler-problem-001/index.html</loc>
-    <lastmod>2024-04-15</lastmod>
+    <lastmod>2024-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://leoflotor.github.io/index.html</loc>
-    <lastmod>2024-04-15</lastmod>
+    <lastmod>2024-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://leoflotor.github.io/menu1/index.html</loc>
-    <lastmod>2024-04-15</lastmod>
+    <lastmod>2024-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://leoflotor.github.io/menu3/index.html</loc>
-    <lastmod>2024-04-15</lastmod>
+    <lastmod>2024-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://leoflotor.github.io/pages/pe-009/index.html</loc>
+    <lastmod>2024-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://leoflotor.github.io/pages/pe-002/index.html</loc>
+    <lastmod>2024-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://leoflotor.github.io/pages/aoc-2023-day-11/index.html</loc>
+    <lastmod>2024-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
