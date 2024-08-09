@@ -6,8 +6,6 @@ hascode = true
 lang = "lisp"
 +++
 
-{{addtags}}
-
 # Project Euler problem 009
 
 @@colbox-blue

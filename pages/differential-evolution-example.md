@@ -1,10 +1,12 @@
 +++
 title = "An example on differential evolution"
 date = Date(2023, 8, 24)
-tags = ["coding", "differential-evolution", "racket", "evolutionary-algorithm"]
+tags = ["coding", "differential-evolution", "racket", "evolutionary-algorithms"]
 hascode = true
 lang = "scheme"
 +++
+
+{{addtags}}
 
 # Differential Evolution
 

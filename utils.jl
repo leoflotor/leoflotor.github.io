@@ -15,6 +15,20 @@ function lx_baz(com, _)
   return uppercase(brace_content)
 end
 
+@delay function hfun_addtags()
+    page = Franklin.locvar("fd_rpath")
+    tags = pagevar(page, "tags")
+
+    io = IOBuffer()
+    write(io, """<div class="franklin-content">""")
+    write(io, """Tags: """)
+    for tag in tags
+        write(io, """<code><a href="/tag/$tag">$tag</a></code> """)
+    end
+    write(io, "</div>")
+    return String(take!(io))
+end
+
 @delay function hfun_blogposts()
     pages = readdir("pages/")    # read the directory where all entries are located
     filter!(endswith(".md"), pages)    # only select markdown files
