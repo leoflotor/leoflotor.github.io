@@ -11,7 +11,7 @@ ignore = ["node_modules/"]
 
 generate_rss = true
 website_title = "QuantumBeans"
-website_descr = "My journey on quantum mechanics, linear algebra, artificial intelligence, algorithms and programming languages."
+website_descr = "My journey on quantum mechanics, artificial intelligence, programming languages, and algorithms and data structures."
 website_url   = "https://leoflotor.github.io/"
 
 +++
